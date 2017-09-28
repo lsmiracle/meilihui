@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css">
+	</head>
+	<body>
+		<div id="box">
+			<div class="register-header">
+				<a>魅力惠</a>
+				<a class="register-header-m">
+					<span>MEI</span>
+					<span>.COM</span>
+				</a>
+				<span>全球奢品</span>
+				<span>品质保证</span>
+			</div>
+			<p class="register-header-p">魅力惠明星买手</p>
+			<p class="register-header-p">MIRANDA KERR</p>
+			<div class="register-content">
+				<div class="register-content-left"><img src=""></div>
+			    <div class="register-content-right">
+			    	<div class="register-content-rightTop">
+				    	<h3>会员登录</h3>
+				    	<p style="margin-left: 75px;">没有账号？</p>
+				    	<p><a href="#">免费注册</a></p>
+			    	</div>
+			    	<form>
+			    		<label>账户名:</label><input id="userNameId" name="userName" class="btn" type="text" placeholder="已验证手机号/邮箱"/><span id="userMsg"></span>
+			    		<label>密码:</label><input id="userPassId" name="userPass" class="btn" type="password"/><span id="userWordId"></span>
+			    	    <input id="btnId" type="submit" value="会员登录"/>
+			    	    <p><input type="checkbox"/><span>下次自动登录</span><a href="#">忘记密码</a></p>
+			    	</form>
+			    	<p id="laberId">联名登录:<img src=""><img src=""></p>
+			        <p id="saomiao"><img src="img/imges_saomiao.jpg"><span>扫描二维码或发送短信"MLH"到"12114"下载APP尊享独家优惠</span></p>
+			    </div>
+			</div>
+		</div>
+	</body>
+	
+	<!--footer-->
+	
+	<footer>
+		<div class="footBox">
+			<div class="footBox-top">
+				<a href="#" class="footBox-content"><span>100%正品保证</span></a>
+				<a href="#" class="footBox-content box1"><span>满688免运费</span></a>
+				<a href="#" class="footBox-content box2"><span>7天无条件退货</span></a>
+				<a href="#" class="footBox-content box3"><span>超值折扣</span></a>
+				<a href="#" class="footBox-content box4"><span>9点限时闪购</span></a>
+				<a href="#" class="footBox-content box5"><span>400-664-6698</span></a>
+			</div>
+			<div class="footBox-top-middle">
+				<a href="#">关于魅力惠</a>
+				<a href="#">加入我们</a>
+				<a href="#">联系我们</a>
+				<a href="#">使用帮助</a>
+				<a href="#">使用规则</a>
+				<a href="#">隐私声明</a>
+				<a href="#">网站地图</a>
+			</div>
+			<div class="footBox-top-bottom">
+				<span>COPYRIGHT 2016杭州魅俪信息技术有限公司版权所有</span>
+				<span>浙ICP备16004860号-1</span>	
+			</div>
+			<img class="footImg" src="img/icon_badge.png"/>
+		</div>
+   </footer>
+</html>
+<script type="text/javascript" src="js/tools.js" ></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/regulartools.js"></script>
+<script type="text/javascript">
+ $(function(){
+	   $("#userNameId").blur(function(){
+		 	  var regNumber= /^1[34578]\d{9}$/;;
+		 	  var regMail = /^[1-9]\d{5,}@{1}q{2}(\.com)$/;
+		      var nameStr=$("#userNameId").val();
+		     if(regNumber.test(nameStr) || regMail.test(nameStr)){
+		         $("#userMsg").text("√");
+
+		     }else{
+		     	  $("#userMsg").text("x");
+		     }
+	   });
+        //密码
+	   $("#userPassId").blur(function(){
+		      var userpassStr=$("#userPassId");
+		      var passwordStr=$("#userWordId");
+		       passWord(userpassStr,passwordStr);
+	   });
+});
+   
+
+</script>

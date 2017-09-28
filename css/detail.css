@@ -1,0 +1,171 @@
+html,body,div,p,ul,li,ol,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul li{
+	list-style:none;
+	}
+.detail-content{
+	height: auto;
+}
+.detail-content-top{
+	display: flex;
+	flex-wrap:wrap;
+	width:1042px;
+	margin-left:215px;
+}
+.detail-left{
+    width:320px;
+    height:232px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.detail-img{
+	position: relative;
+	width:320px;
+	height:192px;
+	overflow: hidden;
+}
+.detail-img p{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:320px;
+	height:192px;
+	text-align: center;
+	line-height: 192px;
+	color:white;
+	display: none;
+	background-color: rgba(55,48,48,0.5);
+	filter:alpha(opacity=50);
+}
+.detail-left img{
+	display: block;
+	width:320px;
+	height:192px;
+	transform: scale(1);
+	transition:all 2s;
+}
+.detail-img:hover img{
+	transform: scale(1.1);
+	transition:all 2s;
+	overflow:hidden;
+	
+}
+.detail-img:hover p{
+	display:block;
+}
+.detail-title{
+	line-height: 40px;
+	background: #f2f2f2;
+}
+.detail-title a:first-child{
+	font-size: 12px;
+	color:black;
+	margin-left: 10px;
+}
+.detail-title a:last-child{
+	font-size: 12px;
+	color:black;
+	margin-left:90px;
+	color:#db2726;
+}
+
+
+.detail-content-title{
+	width:1022px;
+	margin-left:215px;
+	padding-top: 20px;
+}
+.detail-content-title h3{
+	font-weight: 100;
+	font-size: 24px;
+}
+
+.detail-week{
+	display: flex;
+	padding-top: 15px;
+	margin-bottom: 20px;
+}
+.detail-week li{
+	width:60px;
+	line-height: 15px;
+	text-align: center;
+	padding: 0 20px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	border-left: 1px solid black;
+}
+.week li:last-child{
+	border-right: 1px solid black;
+}
+.weekLi{
+	width:1022px;
+	height:490px;
+	display: none;
+}
+.weekLi:first-child{
+	display: block;
+}
+.weekBox{
+	float:left;
+	width:318px;
+	height:100px;
+	margin-bottom:20px;
+	border: 1px solid #E4E4E4;
+	margin-right: 20px;
+}
+.weekDetail{
+	width:320px;
+	height: 100px;
+	display:flex;
+}
+.weekDetail img{
+	width: 159px;
+	height:100px
+}
+.weekDetail p{
+	width: 159px;
+	background: #eee;
+}
+.week-right span:first-child{
+	display: block;
+	width:159px;
+	height:50px;
+	margin-top: 15px;
+	font-size: 14px;
+	
+}
+.week-right span:last-child{
+	display: block;
+	width:159px;
+	height:50px;
+	color: red;
+	font-size: 14px;	
+}
+.week-right span{
+	margin-left: 10px;
+}
+.weekShow{
+	position: absolute;
+	width:318px;
+	height:102px;
+	background: gray;
+	background-color: rgba(55,48,48,0.5);
+	filter:alpha(opacity=50);
+	display: none;
+}
+.weekShow p{
+	margin-left:100px;
+	margin-top: 36px;
+	width:110px;
+	height:30px;
+	background: red;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	color: white;
+}
