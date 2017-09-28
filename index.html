@@ -11,7 +11,7 @@
 		<header>
 			<div class="header-top">
 				<div class="header-top-left">
-					<a href="#" style="color: red;">注册有礼</a>
+					<a href="login.html" style="color: red;">注册有礼</a>
 					<a href="register.html">登录</a>
 					<a href="#" style="background: none;">收藏</a>
 				</div>	
@@ -63,7 +63,6 @@
 						<a href="detail.html">GATTA&nbsp;打造美腿时代</a>
 						<a href="detail.html">查看所有活动</a>
 					</div>
-					<div></div>
 					<div class="header-nav-contentBottom">
 						<h4>商品分类</h4>
 						<a href="detail.html">服饰</a>
@@ -74,7 +73,6 @@
 						<a href="detail.html">内衣</a>
 						<a href="detail.html">眼镜</a>
 					</div>
-					<div></div>
 				</div>
 				<div class="header-nav">
 					<div class="header-nav-contentTop">
@@ -89,7 +87,6 @@
 						<a href="detail.html">XXXTRENTA&nbsp;时髦卫衣专场（满减）</a>
 						<a href="detail.html">查看所有活动</a>
 					</div>
-					<div></div>
 					<div class="header-nav-contentBottom">
 						<h4>商品分类</h4>
 						<a href="detail.html">服饰</a>
@@ -99,7 +96,6 @@
 						<a href="detail.html">内衣</a>
 						<a href="detail.html">眼镜</a>
 					</div>
-					<div></div>
 				</div>
 				<div class="header-nav">
 					<div class="header-nav-contentTop">
@@ -114,7 +110,6 @@
 						<a href="detail.html">HELENA RUBINSTEIN赫莲娜&nbsp;比你所了解的更呵护</a>
 						<a href="detail.html">查看所有活动</a>
 					</div>
-					<div></div>
 					<div class="header-nav-contentBottom">
 						<h4>商品分类</h4>
 						<a href="detail.html">护肤</a>
@@ -127,7 +122,6 @@
 						<a href="detail.html">美容仪</a>
 						<a href="detail.html">美发</a>
 					</div>
-					<div></div>
 				</div>
 				<div class="header-nav">
 					<div class="header-nav-contentTop">
@@ -142,7 +136,6 @@
 						<a href="detail.html">高人气家居&nbsp;金秋特选</a>
 						<a href="detail.html">查看所有活动</a>
 					</div>
-					<div></div>
 					<div class="header-nav-contentBottom">
 						<h4>商品分类</h4>
 						<a href="detail.html">床品</a>
@@ -153,7 +146,6 @@
 						<a href="detail.html">家电</a>
 						<a href="detail.html">旅游</a>
 					</div>
-					<div></div>
 				</div>
 				<div class="header-nav">
 					<div class="header-nav-contentTop">
@@ -168,7 +160,6 @@
 						<a href="detail.html">HUSH PUPPIES&nbsp;美式休闲 女童专场</a>
 						<a href="detail.html">查看所有活动</a>
 					</div>
-					<div></div>
 					<div class="header-nav-contentBottom">
 						<h4>商品分类</h4>
 						<a href="detail.html">服饰</a>
@@ -176,7 +167,6 @@
 						<a href="detail.html">配饰</a>
 						<a href="detail.html">玩具</a>
 					</div>
-					<div></div>
 				</div>
 				<div class="header-nav">
 					<div class="header-nav-contentTop">
@@ -1615,7 +1605,6 @@
 <script type="text/javascript">
 $(function(){
 	  //给导航栏的所属信息定位
-	 $("#index-content-nav").css("position","relative");
 	 $(".header-nav").css("position","absolute");
 	  var left = 300;
 	 for(var i=0;i<$(".header-nav").length;i++){
@@ -1625,6 +1614,7 @@ $(function(){
 	 //滑过导航时显示其所属信息
 	 $(".header-bottom-left>a").hover(
 	 	function(){
+	 	 $(this).css({"color":"red"});
 	 	 let index = $(this).index();
 	 	 $($(".header-nav")[index-1]).toggle();
 	  });

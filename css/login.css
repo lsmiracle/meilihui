@@ -1,4 +1,4 @@
-html, body, div, p, ul, li, ol, dl, dt, dd, form, table, tr, td, hr, h1, h2, h3, h4, h5, h6 {
+html, body, div, p, ul, li, ol, dl, dt, dd, form, table, tr, td, hr, h1, h2, h3, h4, h5, h6, input, span {
   margin: 0;
   padding: 0; }
 
@@ -57,8 +57,7 @@ body {
 
 .register-content-right {
   flex: 1;
-  height: 300px;
-  margin-right: 70px; }
+  height: 300px; }
 
 .register-content-rightTop {
   margin-left: 97px;
@@ -174,21 +173,26 @@ form + p {
   font-size: 12px; }
 
 .explain {
-  padding-left: 100px; }
+  display: flex;
+  margin-left: 25px;
+  padding-left: 75px;
+  margin-right: 145px;
+  border-bottom: 1px solid #a8aaab;
+  padding-bottom: 15px; }
 
-form + p + input {
-  width: 15px;
-  height: 15px; }
+.explain input {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px; }
 
-form + p + input + span {
-  font-size: 14px;
-  line-height: 24px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #999; }
+.explain span {
+  display: block;
+  font-size: 12px; }
 
 #saomiao {
   width: 400px;
-  margin-left: 100px; }
+  margin-left: 100px;
+  margin-top: 20px; }
 
 #saomiao img {
   float: left;
@@ -198,9 +202,113 @@ form + p + input + span {
 #saomiao span {
   float: left;
   width: 135px;
+  margin-left: 15px;
   margin-top: 22px;
   line-height: 20px;
   font-size: 12px;
   color: black; }
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 212px;
+  background: #f2f2f2; }
+
+.footBox {
+  width: 1044px;
+  margin: 0 auto;
+  height: 100%; }
+
+.footBox-top {
+  display: flex;
+  height: 54px;
+  padding-top: 27px;
+  text-align: center; }
+
+.footBox-content {
+  display: block;
+  text-decoration: none;
+  width: 173px;
+  height: 54px;
+  overflow: hidden;
+  background: url(../img/base_z.png) no-repeat -153px -146px;
+  border-right: 1px solid #777777; }
+
+.footBox-content span {
+  display: block;
+  margin-top: 35px;
+  color: black;
+  font-size: 14px; }
+
+.footBox-content:last-child {
+  border-right: none; }
+
+.footBox-content:hover {
+  background-position: -153px -264px; }
+
+.box1 {
+  background-position: -543px -104px; }
+
+.box1:hover {
+  background-position: -543px 7px; }
+
+.box2 {
+  background-position: -150px -382px; }
+
+.box2:hover {
+  background-position: -301px -229px; }
+
+.box3 {
+  background-position: -419px 5px; }
+
+.box3:hover {
+  background-position: -419px -107px; }
+
+.box4 {
+  background-position: -301px -346px; }
+
+.box4:hover {
+  background-position: -301px -459px; }
+
+.box5 {
+  background-position: -301px -112px; }
+
+.box5:hover {
+  background-position: -301px 5px; }
+
+.footBox-top-middle {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-top: 20px;
+  line-height: 30px; }
+
+.footBox-top-middle a:hover {
+  color: red; }
+
+.footBox-top-middle a {
+  color: black;
+  font-size: 12px;
+  margin: 0 20px;
+  text-decoration: none; }
+
+.footBox-top-bottom {
+  text-align: center;
+  height: 35px;
+  line-height: 35px; }
+
+.footBox-top-bottom span:first-child {
+  margin-left: -90px;
+  font-size: 10px;
+  color: black; }
+
+.footBox-top-bottom span:last-child {
+  margin-left: 30px;
+  font-size: 10px;
+  color: black; }
+
+.footImg {
+  margin-left: 500px;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=login.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,2FAAuE;EACnE,MAAM,EAAC,CAAC;EACR,OAAO,EAAE,CAAC;;AAEd,CAAC;EACG,eAAe,EAAE,IAAI;;AAEzB,KAAK;EACD,UAAU,EAAC,IAAI",
+"sources": ["../good.scss"],
+"names": [],
+"file": "good.css"
+}

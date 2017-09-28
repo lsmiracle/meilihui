@@ -1,40 +1,39 @@
 @charset "utf-8";
-html,body,div,p,ul,li,ol,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6,input,span{
+html,body,div,p,ul,li,ol,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6{
     margin:0;
     padding: 0;
 }
-a{
+/*a{
     text-decoration: none;
-}
-body,html{
-    height:100%;
-}
+}*/
+ul li{
+    list-style:none;
+    }
 body{
     background: #f4f4f6;
 }
 #box{
     width:1000px;
     height:auto;
-    margin: 0 auto;
     background: white;
+    margin: 0 auto;
 }
 .register-header{
-    display: flex;
-    width:100%;
-    height:90px;
-  }
-.register-header p{
-     margin-top:25px;
-     width:200px;
-     height:40px;
-     background: url(../img/base_z.png) no-repeat -852px -325px;
+    width:1000px;
+    height:auto;
+    margin-left:310px;
+    line-height: 90px;
+    background:url(../img/logo.jpg) left center no-repeat;
+    text-indent: 50px;
+} 
+.register-header a:first-child{
+    font-size: 32px;
+    color:#231815;
 }
-.register-header p:first-child{
-    margin-left: 310px;
-}
-.register-header p:last-child{
-    margin-bottom: 25px;
-     background-position: -870px -105px;
+span{
+    margin-left: 10px;
+    font-size: 16px;
+    color:#868686;
 }
 .register-header-p{
     width:140px;
@@ -46,8 +45,6 @@ body{
     width:160px;
     padding-bottom: 10px;
 }
-
-
 .register-content{
     width:100%;
     height:560px;
@@ -61,29 +58,25 @@ body{
 .register-content-right{
     flex: 1;
     height:300px;
+    margin-right: 70px;
 }
 .register-content-rightTop{
-    margin-left: 97px;
+    margin-left: 90px;
     display: flex;
-    line-height: 30px;
+    justify-content: space-between;
 }
 .register-content-rightTop p{
     font-size: 12px;
     margin-top: 5px;
 }
 .register-content-rightTop p:last-child{
-    margin-left: 15px;
+    margin-right: 82px;
 }
 .register-content-rightTop a{
     font-size: 12px;
     color: red;
 }
-.register-content-rightTop+div{
-    line-height: 30px;
-    color: red;
-    font-size: 14px;
-    margin-left: 97px;
-}
+
 .register-content-right form{
     display: flex;
     flex-wrap: wrap;
@@ -107,25 +100,12 @@ body{
     margin-left: 10px;
     font-size: 14px;
 }
-.btnClass{
-    width:112px;
-    height:28px;
-    border:1px solid #999;
-    margin-left: 10px;
-}
-#checkWordId{
-    width:125px;
-    height:28px;
-    border:1px solid #999;
-    margin-left: 10px;
-}
 #btnId{
     width:250px;
     height:32px;
     line-height: 32px;
     background: red;
     margin-left: 70px;
-    margin-top: 10px;
     border:none;
     color: white;
     font-size: 14px;
@@ -171,32 +151,9 @@ body{
     height:28px;
     text-align: right;
 }
-form+p{
-    margin-left: 100px;
-    line-height: 24px;
-    font-size: 12px;
-}
-.explain{
-    display: flex;
-    margin-left: 25px;
-    padding-left: 75px;
-    margin-right: 145px;
-    border-bottom: 1px solid #a8aaab;
-    padding-bottom: 15px;
-}
-.explain input{
-    width:20px;
-    height:20px;
-    margin-right: 5px;
-}
-.explain span{
-    display: block;
-    font-size: 12px;
-}
 #saomiao{
     width:400px;
     margin-left: 100px;
-    margin-top: 20px;
 }
 #saomiao img{
     float:left;
@@ -206,7 +163,6 @@ form+p{
 #saomiao span{
     float: left;
     width:135px;
-    margin-left:15px;
     margin-top:22px;
     line-height: 20px;
     font-size: 12px;
