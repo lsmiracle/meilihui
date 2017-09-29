@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-html,body,div,p,ul,li,ol,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6{
+html,body,div,p,ul,li,ol,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6,span{
     margin:0;
     padding: 0;
 }
@@ -10,3 +10,246 @@ a{
 ul li{
     list-style:none;
     }
+ .good-content{
+     width:1000px;
+   // background: yellow;
+    height:auto;
+     margin: 0 auto;
+ }
+.good-content-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #e7e7e7; 
+}
+.good-content-navLeft{
+    display: flex;
+}
+.good-content-navLeft a{
+    font-size: 12px;
+    color: #999;
+    margin-right: 10px;
+}
+.good-content-navLeft p{
+    font-size: 12px;
+}
+.good-content-navLeft span{
+    color: #e7e7e7;
+    margin-right: 10px;
+}
+.good-content-navLeft span:last-child{
+    color: black;
+    margin-right: 10px;
+}
+.good-content-navRight p{
+    width:70px;
+    line-height: 56px;
+    font-size:12px;
+  //  background: url(../img/base_z.png) no-repeat 0px 0px;
+}
+
+.good-content-nav+div{
+    display: flex;
+    width:100%;
+    height:60px;
+    line-height: 56px;
+}
+.good-content-nav+div p{
+    font-size: 14px;
+    margin-right: 20px;
+}
+.good-content-nav+div p:last-child{
+    color: red;
+}
+.good-content-nav+div span{
+    font-size: 18px;
+    color: red;
+}
+.good-content-detail{
+    width:998px;
+    height:110px;
+    border: 1px solid #e7e7e7;
+}
+.good-content-detail div{
+     margin:5px -5px 0 5px;
+     padding-bottom: 25px;
+     border-bottom: 5px solid #f0f0f0;
+     border-right: 5px solid #f0f0f0;
+}
+.good-content-detail p{
+    line-height: 40px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.good-content-reset{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:50px;
+    margin-top: 20px;
+}
+.sorter{
+    width:210px;
+    display: flex;
+}
+.sorter a{
+    display: block;
+    width:100px;
+    line-height: 28px;
+    font-size: 12px;
+}
+.good-reset-sorter{
+    height:30px;
+    text-align: center;
+    background: #e7e7e7;
+    margin-right: 10px;
+}
+.price{
+    height:28px;
+    padding-left: 30px;
+    border:1px solid #e7e7e7;
+    
+}
+
+
+
+
+
+.good-content-page{
+    width:190px;
+    display: flex;
+}
+.good-content-page div{
+    width:50%;
+    height:30px;
+    line-height:30px;
+    font-size: 12px;
+}
+.good-content-page span{
+    display: block;
+    width:50%;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+.good-content-page span b{
+    font-size: 12px;
+}
+
+//商品列表
+.good-content-list{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.productList{
+    width:230px;
+    height:380px;
+    position: relative;
+    margin-right: 20px; 
+    margin-bottom: 20px;
+}
+.productList-img{
+    width:230px;
+    height:300px;
+    position: relative;
+}
+.productList-img a{
+    display: block;
+    width:230px;
+    height:300px;
+}
+.productList-img a img{
+   width:100%;
+   height:100%;
+}
+.productList-infro{
+    width:220px;
+    height:80px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.productList-infro p{
+    line-height: 20px;
+    font-size: 12px;
+}
+.productList-infro p:last-child span:first-child{
+    color: red;
+    font-size: 14px;
+}
+.productList-infro p:last-child span:last-child{
+    color: #000000;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.productList-type{
+    width:230px;
+    height: 120px;
+    position: absolute;
+    top:280px;
+}
+.productList-size{
+    width:230px;
+    height: auto;  
+    display: none;
+}
+.size{
+    width:224px;
+    height: 40px;
+    display: flex; 
+    padding-left: 6px;
+    background: #A8AAAB;
+}
+.size li{
+    width:40px;
+    height:26px;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-right: 6px;
+    text-align: center;
+    line-height: 26px;
+    background: #fff;
+    border: 1px solid black;
+}
+.size-img{
+    width:230px;
+    height: 60px;
+    display: flex;
+    margin-top: 10px;
+}
+.size-img li{
+    width:50px;
+    height: 60px;
+    margin-left: 10px;
+    border: 1px solid #A8AAAB;
+}
+.size-img li img{
+    width: 100%;
+    height: 100%;
+}
+.size-infro{
+    position: relative;
+}
+.size-infro li{
+    display: none;
+    position: absolute;
+    top:-60px;
+    width: 145px;
+    height:70px;
+    padding-left:15px;
+    background: #FFFFFF;
+    border: 1px solid #A8AAAB;
+}
+.size-infro li h3{
+    margin-top: 5px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.size-infro li p{
+    line-height: 20px;
+    font-size: 12px;
+}
