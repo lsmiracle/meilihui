@@ -24,12 +24,12 @@
 			    	<div class="register-content-rightTop">
 				    	<h3>会员登录</h3>
 				    	<p style="margin-left: 75px;">没有账号？</p>
-				    	<p><a href="#">免费注册</a></p>
+				    	<p><a href="login.html">免费注册</a></p>
 			    	</div>
 			    	<form>
 			    		<label>账户名:</label><input id="userNameId" name="userName" class="btn" type="text" placeholder="已验证手机号/邮箱"/><span id="userMsg"></span>
 			    		<label>密码:</label><input id="userPassId" name="userPass" class="btn" type="password"/><span id="userWordId"></span>
-			    	    <input id="btnId" type="submit" value="会员登录"/>
+			    	    <input id="btnId" type="button" value="登录"/><span id="registerError"></span>
 			    	    <p><input type="checkbox"/><span>下次自动登录</span><a href="#">忘记密码</a></p>
 			    	</form>
 			    	<p id="laberId">联名登录:<img src=""><img src=""></p>
@@ -71,26 +71,5 @@
 <script type="text/javascript" src="js/tools.js" ></script>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="js/regulartools.js"></script>
-<script type="text/javascript">
- $(function(){
-	   $("#userNameId").blur(function(){
-		 	  var regNumber= /^1[34578]\d{9}$/;;
-		 	  var regMail = /^[1-9]\d{5,}@{1}q{2}(\.com)$/;
-		      var nameStr=$("#userNameId").val();
-		     if(regNumber.test(nameStr) || regMail.test(nameStr)){
-		         $("#userMsg").text("√");
-
-		     }else{
-		     	  $("#userMsg").text("x");
-		     }
-	   });
-        //密码
-	   $("#userPassId").blur(function(){
-		      var userpassStr=$("#userPassId");
-		      var passwordStr=$("#userWordId");
-		       passWord(userpassStr,passwordStr);
-	   });
-});
-   
-
-</script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript" src="js/register.js"></script>

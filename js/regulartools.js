@@ -11,9 +11,9 @@ function mailBox(num1,num2){
 
 //密码
 function passWord(num1,num2){
-   //var reg = /^\d{6}(\*|\+)[a-z]{5}/;
+    //var reg = /^\d{6}(\*|\+)[a-z]{5}/;
     var reg = /^[a-zA-Z0-9]\d{5,}$/;
-    if(reg.test(num1.value)){
+    if(reg.test(num1.val())){
         num2.text("√");
     }else{
     	num2.text("x");
@@ -29,7 +29,6 @@ function IDCardNumber(num1,num2){
     	num2.innerHTML="x";
     }
 }
-
 
 //手机号码
 function moblieNumber(num1,num2){
@@ -80,3 +79,14 @@ function ipAddress(){
     	num2.innerHTML="x";
     }
 }
+
+//验证码
+function replace(){
+	var code="";
+	var arr=[0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q"];
+	for(i=0;i<4;i++){
+	    var index=parseInt(Math.random()*53);
+	    code=code+arr[index];
+	}
+	 return code;
+	}

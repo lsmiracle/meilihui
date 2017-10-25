@@ -11,8 +11,8 @@
 		<header>
 			<div class="header-top">
 				<div class="header-top-left">
-					<a href="login.html" style="color: red;">注册有礼</a>
-					<a href="register.html">登录</a>
+					<a id="myAccount" href="login.html" style="color: red;">注册有礼</a>
+					<a id="myName" href="register.html">登录</a>
 					<a href="#" style="background: none;">收藏</a>
 				</div>	
 				<div class="header-top-right">
@@ -44,8 +44,8 @@
 					<a href="detail.html">即将推出</a>
 				</div>
 				<div class="header-bottom-right">
-					<a href="#">0</a>
-					<a>￥ 0.00</a>
+					<a href="shopCar.html">0</a>
+					<a href="shopCar.html">￥ <span class="tatol">0.00</span></a>
 					<!--<span>购物袋暂无商品</span>-->
 				</div>
 			</nav>
@@ -1602,64 +1602,6 @@
 <script type="text/javascript" src="js/tools.js" ></script>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="js/SliderPlugInjQuery.js" ></script>
-<script type="text/javascript">
-$(function(){
-	  //给导航栏的所属信息定位
-	 $(".header-nav").css("position","absolute");
-	  var left = 300;
-	 for(var i=0;i<$(".header-nav").length;i++){
-	 	$(".header-nav")[i].style.left = left+"px";
-	 	left += 87;
-	 }
-	 //滑过导航时显示其所属信息
-	 $(".header-bottom-left>a").hover(
-	 	function(){
-	 	 $(this).css({"color":"red"});
-	 	 let index = $(this).index();
-	 	 $($(".header-nav")[index-1]).toggle();
-	  });
-	  //活动开始
-	  let d = new Date();
-	      d = d.getDay();
-	     /* switch(d){
-	      		case 1:$($(".liClass")[d-1]).test("明天");
-	      	           $(".liClass:gt(4)").css("display","none");break;
-	      	    case 2:$($(".liClass")[d-1]).test("明天");
-	      	           $(".liClass:lt(d-1)").css("display","none");
-	      	           $(".liClass:gt(5)").css("display","none");break;
-	      	    case 3:$($(".liClass")[d-1]).test("明天");
-	      	           $(".liClass:lt(d-1)").css("display","none");break;
-	       }*/
-	  $(".liClass").click(function(){
-	  	   $(this).css("border-bottom","4px solid black");
-	  	  let index = $(this).index();
-          for(var i=0;i<$(".weekLi").length;i++){
-          	if(i==index){
-          		$($(".weekLi")[i]).show();
-          		let newHeight = $(this).outerHeight();
-          		$("#weekLiId").css("height","newHeight");
-          	}else{
-          		$($(".liClass")[i]).css("border-bottom","none");
-          	    $($(".weekLi")[i]).hide();
-          	}
-          }  
-	  });
-		/*轮播图*/
-		$("#index-today-right").Slider({
-					"width" : 322,
-					"height" : 506,		
-					//图片数组
-					"imgs" : ["img/20170922185537688.jpg","img/20170922135428198.jpg","img/20170818182918105.jpg"],
-					//时间间隔
-					"timeSpace" : 2000,
-					"btnObj" : {
-						"width":20,
-						"height":20,
-						"bgColor":"gray",
-						"highBgColor":"red",
-						"isCircle": true
-					}
-		});
-	
-	})
-</script>
+<script type="text/javascript" src="js/cookieTools.js" ></script>
+<script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/index.js" ></script>

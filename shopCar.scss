@@ -1,0 +1,442 @@
+@charset "utf-8";
+html,body,div,p,ul,li,ol,dl,dt,dd,form,table,tr,td,th,hr,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    list-style:none;
+    }
+html,body{
+    height: 100%;
+}
+span{
+    margin-left: 0;
+}
+.shopCar{
+    width:1000px;
+    height:auto;
+    margin: 0 auto; 
+}
+.bag{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-bottom:1px solid gray;
+}
+.bag p{
+    font-size: 14px;
+    color: #999;
+}
+.go-shopping{
+    width: 100%;
+    height:40px;
+    background: #FFB6C1;
+    line-height: 40px;
+    margin: 10px 0;
+}
+.shopTwo{
+    display: none;
+}
+.go-shopping span{
+    font-weight: 100;
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.go-shopping a{
+    color: black;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+.go-shopping:last-child{
+    display: none;
+}
+.status{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    display: flex;
+}
+.status p{
+    width:130px;
+    text-align: center;
+}
+.status p:first-child{
+    background: #eee;
+}
+.status .backdrop{
+    background: #eee;
+}
+#detailBox{
+    width:100%;
+    height:800px;
+    position:relative;
+}
+.shopCar-details{
+    width:100%;
+    height:auto;
+    position: absolute;
+    display: block;
+}
+.shopCar-sell{
+    width:100%;
+    height:auto;
+}
+.shopCar-sell-list{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    background: #eee;
+}
+.shopCar-sell-list p:first-child{
+    margin-left: 10px;
+    width:10%;
+    font-size: 14px;
+    float: left;
+}
+.shopCar-sell-list p input{
+    width:15px;
+    height:15px;
+}
+.shopCar-sell-list p:nth-child(2){
+    width:10%;
+    font-size: 14px;
+    float: left;
+}
+.shopCar-sell-list ul{
+    margin-left: 230px;
+    width:55%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+}
+.shopCar-sell-list ul li{
+    font-size: 14px;
+}
+.check{
+    margin-top: 10px;
+    width:99%;
+    height:50px;
+    line-height: 50px;
+    font-size: 14px;
+    padding-left: 10px;
+    border-bottom: 1px solid gray;
+}
+.check input{
+    width:15px;
+    height:15px;
+}
+.total-good-detail{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    background: #eee;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.total-good-detail p{
+    float: left;
+    font-size: 14px;
+}
+#delete{
+    float: left;
+    width:70px;
+    height:25px;
+    background: #fff;
+    border: 1px solid #E4E4E4;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.total-good-detail p:first-child{
+    margin-left: 10px;
+}
+.total-good-detail p:first-child input{
+    width:15px;
+    height:15px;
+}
+.total-good-detail p:nth-child(2){
+    width:75px;
+    margin-left: 15px;
+    color: #999;
+}
+#count{
+    margin: 0 5px;
+    color: red;
+    font-weight: 600;
+}
+.total-good-detail p:nth-child(4){
+    margin-left: 468px;
+}
+.total-good-detail p:nth-child(5){
+   color: red;
+   font-weight: 600;
+}
+.shopCar-price{
+    color: red;
+}
+.total-good-detail input:last-child{
+    width:100px;
+    height:50px;
+    background: #E4E4E4;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+}
+#sect{
+    height:auto;
+}
+.goods-detail{
+  width:100%;
+  height: 130px;
+  margin-top: 15px;
+}
+.radio-button{
+    width:15px;
+    height:15px;
+    margin-left: 10px;
+    background: #fff;
+    float: left;
+    margin-top: 57px;
+    margin-right: 10px;
+}
+.shopCar-goods-infor{
+    width:96%;
+    height:130px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    position: relative;
+}
+.goods-detail img{
+    float: left;
+    width:70px;
+    height:90px;
+    margin-top: 20px;
+}
+.color-add-size{
+    float:left;
+    width:180px;
+    margin-left: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.color-add-size a:first-child{
+    font-size: 12px;
+    font-weight: 600;
+}
+.color-add-size a:nth-child(2){
+    font-size: 12px;
+}
+.color-add-size-infor{
+    width:150px;
+    height:34px;
+    margin-top: 15px;
+    border:1px dashed #999;
+    display: flex;
+}
+.color-add-size-infor div{
+    width:116px;
+    height:34px;
+    line-height: 17px;
+    font-size: 12px;
+    color: #999;
+}
+.color-add-size-infor div span{
+    font-size: 12px;
+    color: #999;
+}
+.color-add-size-infor input{
+    width:34px;
+    height:34px;
+    background: #E7E7E7;
+    color: black;
+    border: none;
+    text-align: center;
+}
+.color-add-size .styleChange{
+    border:1px dashed black;
+}
+.color-add-size-infor .change{
+    background: black;
+    color: white;
+}
+.shopCar-size{
+    width:240px;
+    height:160px;
+    border: 1px solid #000;
+    position: absolute;
+    top:90px;
+    display: none;
+    z-index: 999;
+}
+.shopCar-size p:first-child{
+    width:230px;
+    height:20px;
+    text-align: right;
+    margin-right: 10px;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.size-alter{
+    width:210px;
+    height: 80px;
+    display: flex;
+    margin:10px 20px 0 10px;
+}
+.size-alter p:first-child{
+    width:20px;
+    height:80px;
+    font-size: 14px;
+    color: #999;
+    line-height: 40px;
+}
+.shopCar-size-list{
+    width:165px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.shopCar-size-list li{
+    width:50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    background: #CCCCCC;
+    color: black;
+    margin-right: 5px;
+}
+.shopCar-size-list .choiceSize{
+    background: black;
+    color: white;
+}
+.size-alter+input{
+    width:120px;
+    height:30px;
+    background: black;
+    color: white;
+    margin: 0 auto;
+    border: none;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.goods-detail-price{
+    width:60px;
+    line-height: 130px;
+    font-size: 18px;
+    margin-left: 160px;
+    float: left;
+}
+.goods-detail-price span{
+    font-size: 18px;
+     color: black;
+    margin-left: 5px;
+}
+.shopCar-data{
+    margin-top: 52px;
+    font-size: 14px;
+    color: #929292;
+    float: left;
+    margin-left: 45px;
+}
+.shopCar-data input{
+    float:left;
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    text-align: center;
+    line-height: 30px;
+    border: none;
+    font-size: 20px;
+}
+.shopCar-data span{
+    float: left;
+    width:30px;
+    height:30px;
+    text-align: center;
+    margin-left: 0;
+    line-height: 30px;
+    color: black;
+}
+.shopCar-data+p{
+    margin-left: 30px;
+}
+.goods-data-price{
+    width:60px;
+    line-height: 130px;
+    font-size: 18px;
+    float: left;
+    margin-left: 60px;
+}
+.total-price{
+    color: black;
+    font-size: 18px;
+}
+.delete-good{
+    width:70px;
+    height:30px;
+    border: 1px solid gray;
+    background: none;
+    margin-left: 55px;
+    margin-top: 50px;
+}
+.delete-good+div{
+    width:150px;
+    height:80px;
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    left:800px;
+    top:90px;
+    display: none;
+}
+.delete-good+div p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.delete-good+div input{
+    width:50px;
+    height:25px;
+    margin-top: 15px;
+    background: #E7E7E7;
+    border: none;
+    font-size: 12px;
+    color: #999;
+}
+.delete-good+div input:last-child{
+    background: red; 
+    color: white;
+}
+.wish{
+    position: absolute;
+    display: none;
+    width:100%;
+    height:300px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+.lose-efficacy{
+    position: absolute;
+    display: none;
+    width:100%;
+    height:300px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}

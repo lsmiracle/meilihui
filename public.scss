@@ -31,6 +31,7 @@ header{
     background:url(../img/zhuceyouli.gif) left center no-repeat;
     text-indent: 7px;
 }
+
 .header-top-left a:hover{
     color: red;
 }
@@ -135,6 +136,11 @@ span{
     border-left: 1px solid #fff;
     float:right;
 }
+.header-bottom-right a:last-child span{
+    color: white;
+    font-size: 12px;
+    margin-left: -3px;
+}
 .header-nav{
     width:502px;
     height:auto;
@@ -143,9 +149,10 @@ span{
     display: none;
 }
 #index-content-nav{
-    width:502px;
-    height:340px;
+    //width:502px;
+    //height:340px;
     position: relative;
+    
 }
 .header-nav div{
     float: left;

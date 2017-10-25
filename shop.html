@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+<br /><!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>男士详情页</title>
+		<title>shop</title>
 		<link rel="stylesheet" type="text/css" href="css/public.css">
-		<link rel="stylesheet" type="text/css" href="css/good.css">
+		<link rel="stylesheet" type="text/css" href="css/shop.css">
 	</head>
-	<body>
-		<!--header-->
+	<body onload="leftTimer(2017, 10, 25, 12, 27, 50)">
 		<header>
 			<div class="header-top">
 				<div class="header-top-left">
@@ -193,105 +192,158 @@
 				<img src="img/wechat-2dcode.png"/>
 			</div>
 		</div>
-      <!--  good-->
-        <section class="good-content">
-        	<nav class="good-content-nav">
-        		<div class="good-content-navLeft">
+		<section class="shop-content">
+			<nav class="shop-content-nav">
 	        		<a href="index.html">首页</a>
 	        		<span>></span>
 	        		<a href="detail.html">男士</a>
 	        		<span>></span>
 	        		<p>M&E</p>
-        		</div>
-        		<div class="good-content-navRight">
-        			<p>活动剩余</p>
-        		</div>
+	        		<span>/</span>
+	        		<p>藏蓝色圆领内外双色男士套衫-商品代码：MSJ-215-00079</p>
         	</nav>
-        	<div>
-        		<p>M&E</p>
-        		<p>精选初秋男士羊绒</p>
-        		<p><span>1.9</span>折起</p>
-        	</div>
-        	<div class="good-content-detail">
-	        	<div>
-	        		<p>购M&E 精选初秋男士羊绒；精选初秋男士羊绒专场任意产品，累计满490元，减50元；满790，减100元；满1590元，减150元；满1990元，减200元</p>
-	        		<p>满688元全场免运</p>
-	        	</div>
-        	</div>
-        	<div class="good-content-reset">
-        		<div class="sorter">
-        			<a class="good-reset-sorter">默认排序</a>
-        			<a class="price">价格</a>
-        			<i></i>
-        		</div>
-        		<div class="good-content-page">
-        			<span>共<b>0</b>个商品</span>
-        			<div>
-        				<b class="page-len">1/1</b>
-        				<b class="page-prev" title="上一页"></b>
-        				<b class="page-next" title="下一页"></b>
+        	<!--<div id="shop-content">
+        		<aside class="shop-content-left">
+        			<div id="shop-content-left-top">
+        				<img src="img/MSJ-215-00082a (2).jpg"/>
         			</div>
-        		</div>
+        			<div class="jiantou">></div>
+        			<ul>
+        			   <li><img src="img/MSJ-215-00082a.jpg"/></li>
+        			   <li><img src="img/MSJ-215-00079c.jpg"/></li>
+        			   <li><img src="img/MSJ-215-00079b.jpg"/></li>
+        			   <li><img src="img/MSJ-215-00203a.jpg"/></li>
+        			   <li><img src="img/MSJ-215-00075c.jpg"/></li>
+        			</ul>
+        	    </aside>
+        	    <aside class="shop-content-right">
+        		    <div class="shop-title">
+        		    	<p class="bianhao">M&E</p>
+        		    	<span>分享</span>
+        		    </div>
+        		    <p>藏蓝色圆领内外双色男士套衫</p>
+        		    <div class="shop-price">
+        		    	<p>￥<span>899</span></p>
+        		    	<p>￥3.880</p>
+        		    	<p>2.4<span>折</span></p>
+        		    </div>
+        		    <p>购M&E 精选初秋女士羊绒；M&E 精选初秋男士羊绒专场任意产品，累计满490元，减50元；满790元，减100元；满1590元，减150元；满1990元，减200元</p>
+        	        <p class="shop-color">
+        	        	<span>颜色：</span>
+        	        	<span>藏蓝</span>
+        	        </p>
+        	        <div class="shop-good-display">
+        	        	<img src="img/MSJ-215-00082a.jpg"/>
+        	        	<p>藏蓝</p>
+        	        </div>
+        	        <div class="shop-size">
+        	        	<div class="size-choice">
+        	        	    <p>选择尺寸</p>
+        	        	    <p>请选择尺寸</p>
+        	        	</div>
+        	        	<span>105</span>
+        	        	<span>110</span>
+        	        	<span>115</span>
+        	        </div>
+        	        <ul class="shop-size-infro">
+        	        	<li>
+        	        		<h3>规格/型号:<b>170/88A</b></h3>
+           	     			<p>【详情参考尺寸测量信息】</p>
+        	        	</li>
+        	        	<li>
+        	        		<h3>规格/型号:<b>175/92A</b></h3>
+           	     			<p>【详情参考尺寸测量信息】</p>
+        	        	</li>
+        	        	<li>
+        	        		<h3>规格/型号:<b>180/96A</b></h3>
+           	     			<p>【详情参考尺寸测量信息】</p>
+        	        	</li>
+        	        </ul>
+        	        <div class="shop-data">
+        	        	<p>数量</p>
+        	        	<p>
+        	        	    <input id="subtract" type="text" value="-" style="color: #999;"/>
+        	        	    <span>1</span>
+        	        	    <input id="plus" type="text" value="+"/>
+        	            </p>
+        	            <p><span>预计出库日期：</span>2017年09月28日</p>
+        	        </div>
+        	        <input id="add-car" type="button" value="加入购物车" style="background: black;"/>
+        	        <input id="shopping" type="button" value="立即购买" style="background: red;margin-left: 20px;"/>
+					<div class="shop-time">
+						<p>
+							<span>限时抢购</span>
+							<span>活动剩余</span>
+						</p>
+						<p><b class="days"></b>天<b class="hours"></b>时<b class="minutes"></b>分<b class="seconds"></b>秒</p>
+					</div>
+        	        <div class="shop-declare">
+        	        	<span>正</span>
+        	        	<p>100%正品保证</p>
+        	        	<span>退</span>
+        	        	<p>7天无理由退货</p>
+        	        </div>
+        	    </aside>
         	</div>
-           <!--goods-->
-            <div class="good-content-list"><!--
-           	    <div class="productList">
-           	     	<div class="productList-img">
-	           	     	<a href="shop.html"><img src="img/MSJ-215-00230a (2).jpg" title="蓝色简约圆领短袖T恤"/></a>
-	           	     	<div class="productList-type">
-		           	     	<div class="productList-size">
-		           	     		<ul class="size">
-		           	     			<li>XXS</li>
-			           	     		<li>XS</li>
-			           	     		<li>L</li>
-			           	     		<li>M</li>
-			           	     		<li>S</li>
-		           	     		</ul>	
-		           	     		<ul class="size-img">
-		           	     			<li><img src="img/MSJ-215-00230a.jpg" title="酒红色高领拉链男士开衫"></li>
-			           	     		<li><img src="img/MSJ-215-00230b.jpg" title="酒红色高领拉链男士开衫"></li>
-			           	     		<li><img src="img/MSJ-215-00230c.jpg" title="酒红色高领拉链男士开衫"></li>
-		           	     		</ul>
-		           	     	</div>
-		           	     	<ul class="size-infro">
-	           	     			<li>
-		           	     			<h3>规格/型号</h3>
-		           	     			<p>185/105A</p>
-		           	     			<p>【详情参考尺寸测量信息】</p>
-	           	     			</li>
-	           	     			<li>
-		           	     			<h3>规格/型号</h3>
-		           	     			<p>180/100A</p>
-		           	     			<p>【详情参考尺寸测量信息】</p>
-	           	     			</li>
-	           	     			<li>
-		           	     			<h3>规格/型号</h3>
-		           	     			<p>175/92A</p>
-		           	     			<p>【详情参考尺寸测量信息】</p>
-	           	     			</li>
-	           	     			<li>
-		           	     			<h3>规格/型号</h3>
-		           	     			<p>170/88A</p>
-		           	     			<p>【详情参考尺寸测量信息】</p>
-	           	     			</li>
-	           	     			<li>
-		           	     			<h3>规格/型号</h3>
-		           	     			<p>165/84A</p>
-		           	     			<p>【详情参考尺寸测量信息】</p>
-	           	     			</li>
-		           	     	</ul>
-	           	     	</div>
-	           	    </div>
-           	     	<div class="productList-infro">
-           	     		<p>M&E</p>
-           	     		<p>酒红色高领拉链男士开衫</p>
-           	     		<p><span>￥1,199</span><span>￥4,980</span></p>
-           	     	</div>
-           	    </div>
-            --></div>
-        </section>
-
-      <!--footer-->
+        	<div class="shop-describe">
+        		<p>SIZE INFO</p>
+        		<p>尺寸信息</p>
+        		<p>单位：CM</p>
+        		<table>
+        			<tr>
+        				<th class="colume">品牌尺寸</th>
+        				<th>105</th>
+        				<th>110</th>
+        				<th>115</th>
+        			</tr>
+        			<tr>
+        				<td class="colume">规格型号</td>
+        				<td>170/88A</td>
+        				<td>175/92A</td>
+        				<td>180/96A</td>
+        			</tr>
+        			<tr>
+        				<td class="colume">衣长</td>
+        				<td>65</td>
+        				<td>66</td>
+        				<td>67</td>
+        			</tr>
+        			<tr>
+        				<td class="colume">胸围</td>
+        				<td>102</td>
+        				<td>106</td>
+        				<td>110</td>
+        			</tr>
+        			<tr>
+        				<td class="colume">腰围</td>
+        				<td>94</td>
+        				<td>98</td>
+        				<td>102</td>
+        			</tr>
+        			<tr>
+        				<td class="colume">肩宽</td>
+        				<td>42</td>
+        				<td>43</td>
+        				<td>44</td>
+        			</tr>
+        			<tr>
+        				<td class="colume">袖长</td>
+        				<td>58</td>
+        				<td>59</td>
+        				<td>60</td>
+        			</tr>
+        			<tr>
+        				<td class="colume">下摆</td>
+        				<td>78</td>
+        				<td>82</td>
+        				<td>86</td>
+        			</tr>
+        		</table>
+        	</div>-->
+		</section>
+		
+		
+		<!--footer-->
 		<footer>
 			<div class="footBox">
 				<div class="footBox-top">
@@ -321,7 +373,8 @@
 	</body>
 </html>
 <script type="text/javascript" src="js/tools.js" ></script>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/SliderPlugInjQuery.js"></script>
 <script type="text/javascript" src="js/cookieTools.js" ></script>
 <script type="text/javascript" src="js/public.js" ></script>
-<script type="text/javascript" src="js/good.js" ></script>
+<script type="text/javascript" src="js/shop.js" ></script>

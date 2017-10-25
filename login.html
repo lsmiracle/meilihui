@@ -19,14 +19,14 @@
 			    	<div class="register-content-rightTop">
 				    	<h3>免费注册</h3>
 				    	<p style="margin-left: 100px;">已注册</p>
-				    	<p><a href="#">登录</a></p>
+				    	<p><a href="register.html">登录</a></p>
 			    	</div>
 			    	<div>新客专享 1000元现金券礼包</div>
-			    	<form>
-			    		<label>账户名:</label><input name="userName" class="btn" type="text" placeholder="已验证手机号/邮箱"/><span id="userMsg"></span>
-			    		<label>密码:</label><input name="userPass" class="btn" type="password" placeholder="请输入6-20个字符"/><span id="userPassId"></span>
-			    		<label>确认密码:</label><input name="userCheckPass" class="btn" type="password"/><span id="userCheckId"></span>
-			    	    <label>验证码:</label><input name="checkWord" class="btnClass" type="text"/><input id="checkWordId" type="text"/>
+			    	<form method="post" action="php/regSave.php">
+			    		<label>账户名:</label><input id="useNameId" name="userName" class="btn" type="text" placeholder="已验证手机号/邮箱"/><span id="useMsg"></span>
+			    		<label>密码:</label><input id="usePassId" name="usePass" class="btn" type="password" placeholder="请输入6-20个字符"/><span id="useWordId"></span>
+			    		<label>确认密码:</label><input id="checkPassWord" name="userCheckPass" class="btn" type="password"/><span id="useCheckId"></span>
+			    	    <label>验证码:</label><input name="checkWord" class="btnClass" type="text"/><input id="checkWordId" type="button"/><span id="checkDate"></span>
 			    	    <input id="btnId" type="submit" value="立即注册"/>
 			    	</form>
 			    	<p>点击立即注册即表示同意魅力惠<a>使用条款</a></p>
@@ -35,35 +35,36 @@
 			    </div>
 			</div>
 		</div>
-	</body>
-	
 	<!--footer-->
-	
-	<footer>
-		<div class="footBox">
-			<div class="footBox-top">
-				<a href="#" class="footBox-content"><span>100%正品保证</span></a>
-				<a href="#" class="footBox-content box1"><span>满688免运费</span></a>
-				<a href="#" class="footBox-content box2"><span>7天无条件退货</span></a>
-				<a href="#" class="footBox-content box3"><span>超值折扣</span></a>
-				<a href="#" class="footBox-content box4"><span>9点限时闪购</span></a>
-				<a href="#" class="footBox-content box5"><span>400-664-6698</span></a>
+		<footer>
+			<div class="footBox">
+				<div class="footBox-top">
+					<a href="#" class="footBox-content"><span>100%正品保证</span></a>
+					<a href="#" class="footBox-content box1"><span>满688免运费</span></a>
+					<a href="#" class="footBox-content box2"><span>7天无条件退货</span></a>
+					<a href="#" class="footBox-content box3"><span>超值折扣</span></a>
+					<a href="#" class="footBox-content box4"><span>9点限时闪购</span></a>
+					<a href="#" class="footBox-content box5"><span>400-664-6698</span></a>
+				</div>
+				<div class="footBox-top-middle">
+					<a href="#">关于魅力惠</a>
+					<a href="#">加入我们</a>
+					<a href="#">联系我们</a>
+					<a href="#">使用帮助</a>
+					<a href="#">使用规则</a>
+					<a href="#">隐私声明</a>
+					<a href="#">网站地图</a>
+				</div>
+				<div class="footBox-top-bottom">
+					<span>COPYRIGHT 2016杭州魅俪信息技术有限公司版权所有</span>
+					<span>浙ICP备16004860号-1</span>	
+				</div>
+				<img class="footImg" src="img/icon_badge.png"/>
 			</div>
-			<div class="footBox-top-middle">
-				<a href="#">关于魅力惠</a>
-				<a href="#">加入我们</a>
-				<a href="#">联系我们</a>
-				<a href="#">使用帮助</a>
-				<a href="#">使用规则</a>
-				<a href="#">隐私声明</a>
-				<a href="#">网站地图</a>
-			</div>
-			<div class="footBox-top-bottom">
-				<span>COPYRIGHT 2016杭州魅俪信息技术有限公司版权所有</span>
-				<span>浙ICP备16004860号-1</span>	
-			</div>
-			<img class="footImg" src="img/icon_badge.png"/>
-		</div>
-    </footer>
-</body>
+	    </footer>
+    </body>
 </html>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/regulartools.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
